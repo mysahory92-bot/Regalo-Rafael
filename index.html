@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🎁 Regalo para Rafael 🏀</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- FONDO ANIMADO -->
+    <div class="fondo">
+        <span>🏀</span>
+        <span>⭐</span>
+        <span>🏀</span>
+        <span>✨</span>
+        <span>🏆</span>
+        <span>🏀</span>
+        <span>⭐</span>
+    </div>
+
+
+    <!-- PÁGINA PRINCIPAL -->
+    <main id="paginaPrincipal">
+
+        <!-- INICIO -->
+        <section class="inicio">
+
+            <h1>🎁 SORPRESA PARA RAFAEL 🏀</h1>
+
+            <p id="textoInicio">
+                Tengo una sorpresa preparada especialmente para ti.
+                <br>
+                Pero tendrás que descubrirla poco a poco... 👀
+            </p>
+
+            <!-- CAJA -->
+            <div id="caja" class="caja">
+                <div class="tapa"></div>
+                <div class="caja-cuerpo">
+                    🎁
+                </div>
+            </div>
+
+            <p class="texto-caja">
+                👆 Haz clic en la caja
+            </p>
+
+        </section>
+
+
+        <!-- MÚSICA -->
+        <section id="musicaBox" class="musica oculto">
+
+            <h2>🎵 Música especial</h2>
+
+            <audio id="musica" loop>
+                <source src="musica.mp3" type="audio/mpeg">
+                Tu navegador no puede reproducir este audio.
+            </audio>
+
+            <button id="botonMusica" onclick="controlarMusica()">
+                ▶️ Reproducir música
+            </button>
+
+        </section>
+
+
+        <!-- CUENTA REGRESIVA -->
+        <section class="cuenta">
+
+            <h2>⏳ CUENTA REGRESIVA</h2>
+
+            <p>Faltan...</p>
+
+            <div class="contador">
+
+                <div class="tiempo">
+                    <span id="dias">00</span>
+                    <small>DÍAS</small>
+                </div>
+
+                <div class="tiempo">
+                    <span id="horas">00</span>
+                    <small>HORAS</small>
+                </div>
+
+                <div class="tiempo">
+                    <span id="minutos">00</span>
+                    <small>MIN</small>
+                </div>
+
+                <div class="tiempo">
+                    <span id="segundos">00</span>
+                    <small>SEG</small>
+                </div>
+
+            </div>
+
+            <p id="mensajeCumple"></p>
+
+        </section>
+
+
+        <!-- JUEGO -->
+        <section id="juego" class="juego oculto">
+
+            <div class="barra-info">
+
+                <span id="numeroRegalo">
+                    Regalo 1 de 10
+                </span>
+
+                <div class="barra">
+                    <div id="progreso"></div>
+                </div>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <h2 id="titulo">
+                    🎁 Primer regalo
+                </h2>
+
+                <p id="descripcion">
+                    Comienza la aventura.
+                </p>
+
+                <div id="contenido"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PANTALLA FINAL -->
+    <section id="pantallaFinal" class="pantalla-final oculto">
+
+        <div class="final-contenido">
+
+            <div class="pelota-final">
+                🏀
+            </div>
+
+            <h1>
+                🎉 ¡FELIZ CUMPLEAÑOS RAFAEL! 🎉
+            </h1>
+
+            <h2>
+                🏆 ¡LO LOGRASTE! 🏆
+            </h2>
+
+            <p>
+                Espero que te haya gustado esta pequeña sorpresa.
+                💙
+            </p>
+
+            <p>
+                Gracias por todos los momentos,
+                las risas y los recuerdos compartidos.
+            </p>
+
+            <p class="final-grande">
+                ¡TE QUIERO MUCHO, PRIMO! 💙🏀
+            </p>
+
+            <div class="balones">
+                🏀 ⭐ 🏆 ⭐ 🏀
+            </div>
+
+        </div>
+
+        <div id="confeti"></div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
